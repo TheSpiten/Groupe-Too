@@ -6,10 +6,13 @@ TagManager:
   tags:
   - Waypoints
   - Enemy
+<<<<<<< HEAD
   - TurretPlace
   - Turret
   - Enemy1
   - Wall
+=======
+>>>>>>> Maher
   layers:
   - Default
   - TransparentFX
