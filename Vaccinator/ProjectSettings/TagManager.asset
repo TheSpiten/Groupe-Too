@@ -4,15 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Waypoints
   - Enemy
-<<<<<<< HEAD
-  - TurretPlace
-  - Turret
+  - Waypoints
   - Enemy1
+  - Enemy2
   - Wall
-=======
->>>>>>> Maher
   layers:
   - Default
   - TransparentFX

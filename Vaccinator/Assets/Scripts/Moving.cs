@@ -11,7 +11,7 @@ public class Moving : MonoBehaviour
    
     void Start()
     {
-        wayPoints = GameObject.FindGameObjectWithTag("Waypoints").GetComponent<Waypoints>();
+       // wayPoints = GameObject.FindGameObjectWithTag("Waypoints").GetComponent<Waypoints>();
         //timer = 11;
     }
 
