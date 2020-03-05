@@ -6,15 +6,16 @@ public class Moving : MonoBehaviour
 {
     public float speed;
     public Waypoints wayPoints;
-
+   
     private int waypointnumber;
    
     void Start()
     {
         wayPoints = GameObject.FindGameObjectWithTag("Waypoints").GetComponent<Waypoints>();
+        //timer = 11;
     }
 
-    
+
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, wayPoints.waypoints[waypointnumber].position, speed * Time.deltaTime);
@@ -29,8 +30,17 @@ public class Moving : MonoBehaviour
             {
                 waypointnumber++;
             }
-           
 
+
+        }
+
+
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Wall")
+        {
+            Destroy(gameObject);
         }
     }
 }
