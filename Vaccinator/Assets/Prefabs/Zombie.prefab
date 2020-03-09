@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  wayPoints: {fileID: 2845128372266890659, guid: b8758945136a9824e96b8d6a1183005e,
+  wayPoints: {fileID: 2512836601069825610, guid: b8758945136a9824e96b8d6a1183005e,
     type: 3}
 --- !u!50 &8728249472048121215
 Rigidbody2D:
