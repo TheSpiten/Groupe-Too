@@ -40,7 +40,14 @@ public class Moving : MonoBehaviour
     {
         if (col.gameObject.tag == "Wall")
         {
+            UI.health -= 1;
+            Destroy(gameObject);
+        }
+        else if (col.gameObject.tag== "bullet")
+        {
+            UI.score += 1;
             Destroy(gameObject);
         }
     }
+
 }
