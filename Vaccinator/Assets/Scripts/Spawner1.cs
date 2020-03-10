@@ -30,7 +30,7 @@ public class Spawner1 : MonoBehaviour
 
         while (!stop)
         {
-            randomEnemy = Random.Range(0, 2);
+            randomEnemy = Random.Range(0, 3);
             Instantiate(enemies[randomEnemy], spawnpoint.position, gameObject.transform.rotation);
             enemySpawned++;
 

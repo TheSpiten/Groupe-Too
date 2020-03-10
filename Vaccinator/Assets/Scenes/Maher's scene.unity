@@ -612,10 +612,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 6365607620154132594, guid: eae132bc905925545a591772dd2ad043, type: 3}
-  - {fileID: 6075968540338780371, guid: abe4e52a88841724aa1dfac56b41aa34, type: 3}
+  - {fileID: 2143160407760734229, guid: 45bda0a0230550544a33878f0d7ddad6, type: 3}
+  - {fileID: 1375981885692740637, guid: 40182a6881d368e4296e89247a761c8c, type: 3}
+  - {fileID: 206867513406131225, guid: 37229bafea883314f937ccbc754ec1af, type: 3}
   spawnpoint: {fileID: 1413588687}
-  spawnWait: 3
+  spawnWait: 2
   startW: 5
   stop: 0
 --- !u!1 &1425232330
