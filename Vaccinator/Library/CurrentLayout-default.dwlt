@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 43
     width: 1920
     height: 997
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 105
+  controlID: 58
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 40
+  controlID: 59
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 41
+  controlID: 60
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,7 +383,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 73
     width: 378
     height: 552
@@ -393,7 +393,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b4ebffff
+      m_ExpandedIDs: dee5ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2299
+    x: 379
     y: 73
     width: 1150
     height: 552
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 3.5040996, y: 0.67255235, z: -5.479567}
     speed: 2
-    m_Value: {x: 3.885488, y: 0.7351435, z: -5.4059978}
+    m_Value: {x: 3.5040996, y: 0.67255235, z: -5.479567}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 19.499096
     speed: 2
-    m_Value: 20.417902
+    m_Value: 19.499096
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -579,7 +579,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 646
     width: 1530
     height: 353
@@ -597,21 +597,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Entity/Art
+    - Assets/Entity/Art/NonIn-Game_UI_Buttons
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Entity/Art
+  - Assets/Entity/Art/NonIn-Game_UI_Buttons
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\C4Par\OneDrive\Stalinis kompiuteris\Serious Games\_Game
-    Assets\The Repository\Groupe-Too\Vaccinator
+  m_LastProjectPath: D:\Current Schoolwork\Serious Games\_Game Assets\The Repository\Groupe-Too\Vaccinator
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 82360000
-    m_LastClickedID: 13954
-    m_ExpandedIDs: 000000007c3600008036000082360000
+    m_SelectedIDs: 10390000
+    m_LastClickedID: 14608
+    m_ExpandedIDs: 000000003e3700004437000046370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -639,7 +638,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c360000
+    m_ExpandedIDs: 000000003e370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -742,7 +741,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3451
+    x: 1531
     y: 73
     width: 388
     height: 926
