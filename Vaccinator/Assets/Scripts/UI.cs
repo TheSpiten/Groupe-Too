@@ -8,7 +8,8 @@ public class UI : MonoBehaviour
     
     public static int score;
     public static int health;
-    public GameObject panel;
+    public GameObject losePanel;
+    public GameObject winPanel;
 
     public static bool winScreen;
     public static bool loseScreen;
@@ -28,10 +29,17 @@ public class UI : MonoBehaviour
 
             winScreen = true;
         }
+
         else if (health == 0)
         {
             Time.timeScale = 0;
-            panel.SetActive(true);
+            losePanel.SetActive(true);
+        }
+
+        else if (score == 100)
+        {
+            Time.timeScale = 0;
+            losePanel.SetActive(true);
         }
     }
 }
