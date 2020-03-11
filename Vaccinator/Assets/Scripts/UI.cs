@@ -23,7 +23,7 @@ public class UI : MonoBehaviour
     
     void Update()
     {
-        if (score == 3)
+        if (score == 23)
         {
             Time.timeScale = 0;
 
