@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    
+    [SerializeField]
     public static int score;
     public static int health;
     public GameObject losePanel;

@@ -4,12 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
   - Waypoints
-  - Enemy1
-  - Enemy2
   - Wall
   - TurretTile
+  - Corona
+  - Ebola
+  - Virus
+  - Enemy
+  - Enemy1
+  - Enemy2
   layers:
   - Default
   - TransparentFX
