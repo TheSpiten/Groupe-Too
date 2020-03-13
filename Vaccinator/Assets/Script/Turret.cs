@@ -32,7 +32,7 @@ public class Turret : MonoBehaviour
         GameObject nearestEnemy = null;
         foreach(GameObject enemy in enemies)
         {
-            float distancetToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
+            float distancetToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
             if (distancetToEnemy < shortestDistance)
             {
                 shortestDistance = distancetToEnemy;
@@ -57,22 +57,22 @@ public class Turret : MonoBehaviour
             return;
         }
 
-        Vector2 dir = target.position - transform.position;
-        Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector2 rotation = lookRotation.eulerAngles;
-        Rotation.rotation = Quaternion.Euler(0f, 0f, rotation.x);
+        //Vector3 dir = target.position - transform.position;
+        //Quaternion lookRotation = Quaternion.LookRotation(dir);
+        //Vector3 rotation = lookRotation.eulerAngles;
+        //Rotation.rotation = Quaternion.Euler(0f, 0f, rotation.x);
 
-        //Vector2 direction = target.position - transform.position;
-        //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        //Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        //transform.rotation = Quaternion.Slerp(transform.rotation, rotation, speed * Time.deltaTime);
+        Vector2 direction = target.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, speed * Time.deltaTime);
 
-        //if(fireCountdown <= 0f)
-        //{
-        //    Shoot();
-        //    fireCountdown = 1f / fireRate;
-        //}
-        //fireCountdown -= Time.deltaTime;
+        if (fireCountdown <= 0f)
+        {
+            Shoot();
+            fireCountdown = 1f / fireRate;
+        }
+        fireCountdown -= Time.deltaTime;
     }
     void OnDrawGizmosSelected()
     {
