@@ -11,35 +11,36 @@ public class UI : MonoBehaviour
     public GameObject losePanel;
     public GameObject winPanel;
 
-    public static bool winScreen;
-    public static bool loseScreen;
+   
 
     void Start()
     {
         score = 0;
         health = 3;
+        
     }
 
-    
+
     void Update()
     {
-        if (score == 23)
+        if (score == 25)
         {
             Time.timeScale = 0;
 
-            winScreen = true;
+
+            winPanel.SetActive(true);
         }
 
         else if (health == 0)
         {
+
             Time.timeScale = 0;
+
             losePanel.SetActive(true);
+
         }
 
-        else if (score == 100)
-        {
-            Time.timeScale = 0;
-            losePanel.SetActive(true);
-        }
+
     }
+    
 }

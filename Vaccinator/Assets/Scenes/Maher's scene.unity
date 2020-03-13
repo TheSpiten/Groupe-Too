@@ -235,6 +235,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4146385011736177995}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &862947680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862947675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ed80038cc7d624cb40f6ab45eb9860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &903145624
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,8 +735,8 @@ MonoBehaviour:
   - {fileID: 1375981885692740637, guid: 40182a6881d368e4296e89247a761c8c, type: 3}
   - {fileID: 206867513406131225, guid: 37229bafea883314f937ccbc754ec1af, type: 3}
   spawnpoint: {fileID: 1413588687}
-  spawnWait: 2
-  startW: 5
+  spawnWait: 1
+  startW: 2
   stop: 0
 --- !u!1 &1425232330
 GameObject:
@@ -846,6 +858,7 @@ GameObject:
   - component: {fileID: 1507035089}
   - component: {fileID: 1507035088}
   - component: {fileID: 1507035091}
+  - component: {fileID: 1507035092}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -932,12 +945,98 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   losePanel: {fileID: 862947675}
   winPanel: {fileID: 1752831996}
+--- !u!114 &1507035092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507035087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a425eda9c20aeab4cbf8abed1843fcb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioFiles:
+  - audioName: GameMusic
+    audioClip: {fileID: 8300000, guid: 3b079f21478abbd4aaa72b81f7023121, type: 3}
+    volume: 0.2
+    source: {fileID: 0}
+    isLooping: 1
+    playOnAwake: 0
+  - audioName: Button
+    audioClip: {fileID: 8300000, guid: 3b1705996ba157f45855115830397389, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: PlayerLoss
+    audioClip: {fileID: 8300000, guid: 20d1bf60abf775b46928248577c118e3, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: PlayerWin
+    audioClip: {fileID: 8300000, guid: e6fa2859719691d4982930474a3ed836, type: 3}
+    volume: 0.3
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: shooting
+    audioClip: {fileID: 8300000, guid: a4fc340cb9f8a174eb6d40727059846d, type: 3}
+    volume: 0.25
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: Squish1
+    audioClip: {fileID: 8300000, guid: 746e3a776cab2094f96c6e9048b30f7c, type: 3}
+    volume: 0.2
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: Squish2
+    audioClip: {fileID: 8300000, guid: 76d454b44ef288149a74cd2815b17bf8, type: 3}
+    volume: 0.2
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: Squish3
+    audioClip: {fileID: 8300000, guid: 1a091e5aca473f54dbd7e2ee1691df3e, type: 3}
+    volume: 0.2
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: Syringe
+    audioClip: {fileID: 8300000, guid: 3ad57211187d2ba4a8791b354ce43a36, type: 3}
+    volume: 0.2
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: SquishImpact
+    audioClip: {fileID: 8300000, guid: c4c96938a7a3b6f4ca7693cd1b37f6fa, type: 3}
+    volume: 0.2
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  Mixer: {fileID: 0}
 --- !u!1 &1752831996 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4146385013219523255, guid: 7601fc55a4b03bf4ab2a6129b071cea1,
     type: 3}
   m_PrefabInstance: {fileID: 4146385011736177995}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1752832001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752831996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79f548f8c5549742ac120fbb24607f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1966630950
 GameObject:
   m_ObjectHideFlags: 0

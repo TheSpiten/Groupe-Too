@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -210,6 +210,15 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    void Start()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Maher's Scene"))
+        {
+            FindObjectOfType<AudioManager>().Play("GameMusic");
+        }
+
+       
+    }
 
     private IEnumerator IFadeOut(string name, float duration)
     {
@@ -344,6 +353,53 @@ public class AudioManager : MonoBehaviour
 
         }
 
-       
+        if (UI.score == 25 )
+        {
+            PauseMusic("GameMusic");
+
+        }
+        else if ( UI.health == 0)
+        {
+            PauseMusic("GameMusic");
+            
+        }
+        else if (UI.score != 25 || UI.health != 0)
+        {
+            
+            UnPauseMusic("GameMusic");
+        }
+
+
+        //    else
+        //    {
+        //        UnPauseMusic("BattleMusic");
+        //    }
+
+
+        //    if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("mainMenu"))
+        //    {
+        //        StopMusic("MainMenu");
+        //    }
+
+        //    if (Input.GetKey(KeyCode.V))
+        //    {
+        //        StopMusic("BattleMusic");
+        //    }
+
+        //    if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Player1WinScreen"))
+        //    {
+        //        StopMusic("player1win");
+        //    }
+
+        //    if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Player2WinScreen"))
+        //    {
+        //        StopMusic("player2win");
+        //    }
+
+        //    if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("main") && timerScript.timer <= 5f || GameControl.restart == true)
+        //    {
+        //        StopMusic("CountingDown");
+        //    }
+        //}
     }
 }

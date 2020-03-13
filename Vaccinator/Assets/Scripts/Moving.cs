@@ -40,11 +40,13 @@ public class Moving : MonoBehaviour
     {
         if (col.gameObject.tag == "Wall")
         {
+            FindObjectOfType<AudioManager>().Play("Squish1");
             UI.health -= 1;
             Destroy(gameObject);
         }
         else if (col.gameObject.tag== "bullet")
         {
+            FindObjectOfType<AudioManager>().Play("Squish1");
             UI.score += 1;
             Destroy(gameObject);
         }

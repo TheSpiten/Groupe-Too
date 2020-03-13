@@ -21,6 +21,9 @@ public class MainMenu : MonoBehaviour
     {
         
         SceneManager.LoadScene("Maher's Scene");
+        
+       
+        
     }
 
     public void Quit()
