@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
@@ -14,15 +12,15 @@ public class Bullet : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
+    //void Start()
+    //{
         
-    }
+    //}
 
     // Update is called once per frame
     void Update()
     {
-        if (target = null)
+        if (target == null)
         {
             Destroy(gameObject);
             return;
@@ -41,6 +39,8 @@ public class Bullet : MonoBehaviour
     void HitTarget()
     {
         Debug.Log("Hit");
+        Destroy(gameObject);
+        Destroy(target.gameObject);
     }
 
 }

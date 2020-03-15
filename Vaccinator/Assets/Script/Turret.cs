@@ -10,6 +10,7 @@ public class Turret : MonoBehaviour
     private Transform target;
     public float range = 15;
 
+    [Header("Setup Fields")]
     public string enemyTag = "Enemy";
     public Transform Rotation;
 
@@ -19,7 +20,7 @@ public class Turret : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
 
-    private void Start()
+    void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
@@ -50,7 +51,7 @@ public class Turret : MonoBehaviour
         }
     }
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
         if(target == null)
         {
