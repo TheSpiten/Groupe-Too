@@ -43,9 +43,9 @@ public class TowersManager : MonoBehaviour
                 }
                     
 
-                }
             }
         }
+    }
 
         
 }

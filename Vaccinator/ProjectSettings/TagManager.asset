@@ -13,6 +13,10 @@ TagManager:
   - Enemy
   - Enemy1
   - Enemy2
+  - TurretTile1
+  - TurretTile2
+  - TurretTile3
+  - TurretTile4
   layers:
   - Default
   - TransparentFX
